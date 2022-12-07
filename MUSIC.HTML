@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root{
+            --black:black;
+            --red:red;
+            --body:white;
+            max-width: 1200px;
+        }
+        *{
+            margin: 20;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body{
+            font-family: "roboto", sans-serif;
+            font-weight: 300;
+            line-height: 1.4;
+            scroll-behavior: smooth;
+        }
+        section{
+            scroll-margin: 50px;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+        }
+       .container{
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: rgb(29, 26, 26);
+       }
+       nav{
+        display: flex;
+       }
+       nav ul{
+        display: flex;
+        gap: 50px;
+       }
+       nav ul li:hover{
+        border-bottom: 2px solid white;
+       }
+       nav ul li{
+        border-bottom: 2px solid transparent;
+        transition: 0.2s ease-in;
+       }
+       .hero-section{
+        background-image: url(images/hero.jfif);
+        height: 100vh;
+        display: grid;
+        color: white;
+        place-items: center;
+        text-align: center;
+       }
+       .hero-section .container1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       }
+       .hero-section h1{
+        font-size: 96px;
+       }
+       .hero-section h3{
+        font-size: 32px;
+       }
+       .music-section{
+        padding-top: 50px;
+        background:gray;
+       }
+       .music-section .container2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       }
+       .ipad-iphone-img{
+        top: 400px;
+       }
+       button{
+        padding: 10px 15px;
+        border: none;
+        transition: 0.2s ease-in-out;
+       }
+       button:hover{
+        transition: 0.2s ease-in-out;
+        opacity: 0.8;
+       }
+       .primary-btn{
+        background-color: red;
+        color: white;
+       }
+       .secondary-btn{
+        background-color: blue;
+        color: white;
+       }
+       .about-music{
+        display: grid;
+        place-items: center;
+        background-color: white;
+        padding: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+       }
+       .about-video{
+        background-image: url(images/star.jfif);
+        color: white;
+        min-height: 100px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+       .video-section .container{
+        display: flex;
+        flex-direction: column;
+       }
+       .hero-section{
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+       .gift-section{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        background-color: white;
+       }
+       .display-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 80px;
+       }
+       .footer-upper{
+        background-color: black;
+        padding: 20px;
+       }
+       .footer-upper .container{
+        display: flex;
+        color: white;
+        justify-content: space-between;
+       }
+       .footer-upper h4{
+        padding-bottom: 10px;
+        border-bottom: 2px solid white;
+        margin-bottom: 10px;
+       }
+       .footer-lower{
+        background-color: grey;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        color: white;
+       }
+       .gift-section{
+        scroll-margin: 100px;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYTUNES</title>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+        <a href="#mytunes">
+        <li>mytunes</li>
+        </a> 
+        <a href="#overview">
+        <li>overview</li>
+        </a> 
+        <a href="#music">
+        <li>music</li>
+        </a> 
+        <a href="#video">
+        <li>video</li>
+        </a> 
+        <a href="#giftcards">
+        <li>giftcards</li>
+        </a>  
+        </ul>
+    </nav>
+    <section class="hero-section" id="hero">
+        <div class="container1">
+            <h1>myTunes</h1>
+            <h3>your music,movies,and tv shows take center stage.</h3>
+            <p>myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+        </div>
+    </section>
+    <section class="music-section" id="music">
+        <div class="container2">
+            <h2>
+                <span><i class="fa fa-music"></i></span>
+                MUSIC
+            </h2>
+            <h4>Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal myTunes library — no matter where it came from — lives right alongside the Orange Music catalog. Start your free three-month trial with no commitment, and cancel anytime.</h4>
+            <button class="primary-btn">start your trail now</button>
+            <p>Orange Music is available in myTunes, and for iOS and Android devices.</p>
+            <div class="ipad-iphone-img">
+                <img src="images/ipad.jfif" alt="ipad-iphone-img">
+            </div>
+        </div>
+    </section>
+    <section class="about-music container">
+        <h3>The movie and TV collection you always wished for. Granted.</h3>
+        <p>With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
+        <button class="secondary-btn">READ MORE</button>
+        <div class="mac-img">
+            <img src="images/mac.jfif" alt="macbook">
+        </div>
+    </section>
+    <section class="about-video container">
+        <h3>A world of entertainment. Available wherever you are.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!</p>
+    </section>
+    <div class="container3"></div>
+    <section class="gift-section container" id="gift">
+        <div class="gift-card">
+            <img src="images/giftcard.jfif" alt="gift card">
+        </div>
+        <div class="gift-content">
+            <h3>Gift Cards</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati molestias veritatis porro.</p>
+            <p>Already have an Orange MyTunes Music Gift Card?</p>
+            <hr>
+            <div>
+                <p>>REDEEM</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <section class="footer-upper">
+            <div class="container">
+                <div class="footer-link">
+                    <h4>Shop & Learn</h4>
+                    <ul>
+                        <li>Music</li>
+                        <li>Movies</li>
+                        <li>Shows</li>
+                        <li>Apps</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h4>Orange Store</h4>
+                    <ul>
+                        <li>Find a Store</li>
+                        <li>Today at Orange</li>
+                        <li>Orange Camp</li>
+                        <li>Orange Camp</li>
+                        <li>Order Status</li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h4>Education & Business</h4>
+                    <ul>
+                        <li>Orange & Education</li>
+                        <li>Shop For College</li>
+                        <li>Orange & Business</li>
+                        <li>Shop For Business</li>
+                        <li>Jobs</li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h4>About Orange</h4>
+                    <ul>
+                        <li>Newsroom</li>
+                        <li>Orange Leadership</li>
+                        <li>Investors</li>
+                        <li>Events</li>
+                        <li>Contact Orange</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer-lower">
+            <p>Copyright © 2019 Orange myTunes</p>
+        </section>
+    </footer>
+</body>
+</html>
